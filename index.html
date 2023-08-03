@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "button"
+        value = "ola seu puto"
+            onclick = "oi()">
+
+<script>
+    function oi(){
+        var num = Number(window.prompt('digite algo'))
+        var maior = num
+        var menor = num
+
+        cc = String(window.prompt('digite s para continuar ou n para sair'))
+       
+        while (cc != 's'){
+            var num = Number(window.prompt('digite algo'))
+
+            if(num > maior){
+                num=maior
+            }
+            if(maior < menor){
+                menor = num
+            }       
+
+            }
+            cc = String(window.prompt('digite s para continuar ou n para sair'))
+            print('o maior valor é: {}' .format(maior))
+    }
+
+</script>
+</body>
+</html>
